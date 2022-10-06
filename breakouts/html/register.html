@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <!-- Back button -->
+    <a href="index.html"><button>Go Back</button></a>
+
+    <!-- Register Form -->
+    <div>
+      <form method="GET">
+        <label for="firstname"><span>First</span> name:</label>
+        <input type="text" name="firstname" id="firstname" /><br />
+
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname" /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required /><br />
+
+        <label for="password">Pasword:</label>
+        <input
+          type="password"
+          name="password"
+          minlength="5"
+          id="password"
+        /><br />
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" disabled /><br />
+
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" name="gender" value="other" />
+        <label for="other">Female</label><br />
+
+        <p>Pets:</p>
+        <input type="checkbox" name="pet" value="cat" id="cat" />
+        <label for="cat">Cat</label><br />
+        <input type="checkbox" name="pet" value="dog" id="dog" />
+        <label for="dog">Dog</label><br />
+        <input type="checkbox" name="pet" value="other" id="other" />
+        <label for="other">Other</label><br />
+        <br />
+
+        <p>Cars:</p>
+        <select name="cars" multiple>
+          <option value="toyota">Toyota</option>
+          <option value="audi">Audi</option>
+          <option value="fiat">Fiat</option>
+          <option value="ford">Ford</option>
+        </select>
+
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
+  </body>
+</html>
