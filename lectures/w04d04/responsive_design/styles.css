@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 30px;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+header {
+  height: 160px;
+  background-color: coral;
+}
+
+section {
+  border: 2px solid black;
+}
+
+section div {
+  height: 50vh;
+  width: 10rem;
+  /* min-width: 100px;
+  max-width: 180px; */
+  margin: 20px;
+  line-height: 150px;
+  display: inline-block;
+  background-color: lightpink;
+  text-align: center;
+}
+
+footer {
+  background-color: burlywood;
+  height: 150px;
+}
+
+/* @media only screen and (min-width: 500px) {
+  header {
+    background-color: limegreen;
+  }
+
+  section {
+    background-color: brown;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  section {
+    background-color: skyblue;
+  }
+} */
+
+/* @media only screen and (orientation: landscape) {
+  body {
+    background-color: goldenrod;
+  }
+} */
