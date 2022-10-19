@@ -63,7 +63,7 @@ const obj2 = { a: 999 };
 console.log(obj1 === obj2); // false
 ```
 
-Use [https://pythontutor.com/](Python Tutor) to help visualize
+Use [Python Tutor](https://pythontutor.com/) to help visualize
 
 ### Navigating inside complicated/deep objects
 
