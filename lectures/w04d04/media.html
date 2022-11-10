@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      img {
+        width: 60%;
+        height: auto;
+      }
+
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        background-color: green;
+      }
+
+      article {
+        width: calc(50% - 0.5em);
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+      @media screen and (max-width: 1000px) {
+        article {
+          flex-direction: column;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        body {
+          background-color: blue;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        article {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        body {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <img src="images/20220131221341_1.jpg" alt="" />
+      <div>
+        <h1>Image title 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi
+          laboriosam architecto laudantium temporibus quo libero totam veniam,
+          assumenda reiciendis fugit itaque adipisci distinctio ut sed explicabo
+          accusantium qui vel.
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/20220201000857_1.jpg" alt="" />
+      <div>
+        <h1>Image title 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi
+          laboriosam architecto laudantium temporibus quo libero totam veniam,
+          assumenda reiciendis fugit itaque adipisci distinctio ut sed explicabo
+          accusantium qui vel.
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/20220131174506_1.jpg" alt="Image" />
+      <div>
+        <h1>Image title 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi
+          laboriosam architecto laudantium temporibus quo libero totam veniam,
+          assumenda reiciendis fugit itaque adipisci distinctio ut sed explicabo
+          accusantium qui vel.
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/20220202213814_1.jpg" alt="" />
+      <div>
+        <h1>Image title 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi
+          laboriosam architecto laudantium temporibus quo libero totam veniam,
+          assumenda reiciendis fugit itaque adipisci distinctio ut sed explicabo
+          accusantium qui vel.
+        </p>
+      </div>
+    </article>
+  </body>
+</html>

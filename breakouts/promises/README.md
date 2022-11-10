@@ -1,4 +1,4 @@
 ### Promises and Callbacks Breakout
 
-- Callbacks example
-- Promises example
+- Async example with callbacks
+- Async example with promises
