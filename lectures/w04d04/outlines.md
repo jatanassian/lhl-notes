@@ -92,7 +92,7 @@ article {
 
 ### `max-width` and `min-width`
 
-````css
+```css
 article {
   font-size: 0.5em;
   width: 100%;
@@ -105,40 +105,42 @@ article {
 
 ```css
 article {
-        font-size: 0.5em;
-        width: 100%;
-        max-width: 40ch; /* This one */
-        min-width: 200px;
-      }
+  font-size: 0.5em;
+  width: 100%;
+  max-width: 40ch; /* This one */
+  min-width: 200px;
+}
 
-      section {
-        padding: 1em;
-        display: flex; /* This one */
-        flex-wrap: wrap; /* This one */
-        gap: 1em;
-      }
+section {
+  padding: 1em;
+  display: flex; /* This one */
+  flex-wrap: wrap; /* This one */
+  gap: 1em;
+}
 ```
 
 ### Media Queries
+
 - new HTML file with CSS:
+
 ```css
 img {
-        width: 40%;
-        height: auto;
-      }
+  width: 40%;
+  height: auto;
+}
 
-      body {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-      }
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
 
-      article {
-        width: 50%; /* update it later to calc(50% - 0.5em) */
-        display: flex;
-        align-items: center;
-        gap: 1em;
-      }
+article {
+  width: 50%; /* update it later to calc(50% - 0.5em) */
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
 ```
 
 - **media type** and **media feature**
@@ -147,37 +149,37 @@ img {
 
 ```css
 @media screen and (max-width: 800px) {
-        article {
-          width: 100%;
-          flex-direction: column;
-        }
+  article {
+    width: 100%;
+    flex-direction: column;
+  }
 
-        img {
-          width: 100%;
-        }
-      }
+  img {
+    width: 100%;
+  }
+}
 ```
 
 - Here there's a big clash when switching from one size to the other
 
-```css
+````css
 @media screen and (max-width: 700px) {
-        article {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
+  article {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 
-      @media screen and (max-width: 1100px) {
-        article {
-          flex-direction: column;
-        }
+@media screen and (max-width: 1100px) {
+  article {
+    flex-direction: column;
+  }
 
-        img {
-          width: 100%;
-        }
-      }
-      ```
+  img {
+    width: 100%;
+  }
+}
+```
 
 - let's resize the image when large screen
 
@@ -192,9 +194,10 @@ img {
 ```css
 /* Add this to every media query with diff colors */
 body {
-          background-color: green; /* The 700px one won't be appliedm ask why*/
-        }
-```
+  background-color: green; /* The 700px one won't be appliedm ask why*/
+}
+````
+
 - remove last media query as it is redundant
 - reorder media queries by level of specificity to fix color overwriting
 
@@ -337,4 +340,7 @@ header {
   @include make-square(30px);
 }
 ```
-````
+
+```
+
+```
