@@ -2,7 +2,10 @@
 
 ## To Do
 
-- [ ] Functions as values
+- [ ] What is a callback
 - [ ] Functions calling vs functions passing
-- [ ] Higher order functions
 - [ ] Examples
+- [ ] Map
+- [ ] Filter
+- [ ] ForEach
+- [ ] More exercises

@@ -1,9 +1,13 @@
 const numbers = [1, 2, 3, 4, 5];
 
 const myOwnMap = (array) => {
+  const result = [];
+
   for (const element of array) {
-    console.log(element * 2);
+    result.push(element * 2);
   }
+
+  return result;
 };
 
 // myOwnMap(numbers)
@@ -20,8 +24,6 @@ const multiplyByTwo = (element) => {
 };
 
 myOwnCallbackMap(numbers, multiplyByTwo);
-
-// IF THEY KNOW ARRAY.MAP
 
 const numbersByTwo = (array) => {
   // return array.map(element => element * 2);
