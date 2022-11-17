@@ -10,24 +10,29 @@ const myOwnMap = (array) => {
   return result;
 };
 
-// myOwnMap(numbers)
+console.log(myOwnMap(numbers));
 
 const myOwnCallbackMap = (array, callback) => {
+  const output = [];
+
   for (const element of array) {
-    // console.log(element * 2);
-    console.log(callback(element));
+    output.push(callback(element));
   }
+
+  return output;
 };
 
 const multiplyByTwo = (element) => {
   return element * 2;
 };
 
-myOwnCallbackMap(numbers, multiplyByTwo);
+console.log(myOwnCallbackMap(numbers, multiplyByTwo));
 
 const numbersByTwo = (array) => {
   // return array.map(element => element * 2);
   return array.map(multiplyByTwo);
 };
 
-// console.log(numbersByTwo(numbers));
+// const numbersByTwo = (array) => array.map(multiplyByTwo);
+
+console.log(numbersByTwo(numbers));
