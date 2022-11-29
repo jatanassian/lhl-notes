@@ -1,22 +1,6 @@
 require("dotenv").config();
 const request = require("request-promise-native");
 
-// WHAT IS A PROMISE?
-
-// const consoleLogging = (string) => {
-//   return new Promise((resolve, reject) => {
-//     if (!string) {
-//       reject("You forgot the string!");
-//     } else {
-//       resolve(`Here is the string: ${string}`);
-//     }
-//   });
-// };
-
-// consoleLogging()
-//   .then((response) => console.log(response))
-//   .catch((error) => console.log(error));
-
 const getMyLocation = () => {
   // Get my IP
   request("https://api.ipify.org/?format=json")
